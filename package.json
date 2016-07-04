@@ -1,0 +1,32 @@
+{
+  "name": "mymoneytor-api",
+  "version": "1.0.0",
+  "description": "My moneytor api, known were your money goes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test --recursive",
+    "code": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dafortune/mymoneytor-api.git"
+  },
+  "author": "Damian Andres Fortuna (aka Fortune)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dafortune/mymoneytor-api/issues"
+  },
+  "homepage": "https://github.com/dafortune/mymoneytor-api#readme",
+  "devDependencies": {
+    "standard": "^7.1.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "glob": "^7.0.5",
+    "hapi": "^13.4.1",
+    "hapi-promise-wrapper": "^1.0.2",
+    "lodash": "^4.13.1",
+    "mongo-getdb": "^2.1.0",
+    "promise-breaker": "^3.0.0"
+  }
+}
