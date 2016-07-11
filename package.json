@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test --recursive",
-    "code": "standard"
+    "code": "standard",
+    "dump_db": "pg_dump -s mymoneytor > db_schema.sql"
   },
   "repository": {
     "type": "git",
