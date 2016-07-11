@@ -3,7 +3,7 @@
 module.exports.register = function errors(server, options, next) {
   server.ext('onPostHandler', function(req, reply) {
     if (typeof req.response !== 'object' || req.response === null || !req.response.isBoom) {
-      return reply.continue()
+      return reply(req.response)
     }
 
     req.response.output.payload.errorCode = req.response.data.code
